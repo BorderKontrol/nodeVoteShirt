@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="de"  style="height: 100%">
+<head>
+	<title>T-Shirt Wahl</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+</head>
+<body style="min-height: 100%" class="w3-dark-grey">
+	<header class="w3-container w3-teal">
+		<h1>T-Shirt Wahl</h1>
+	</header>
+	<div class="w3-container">
+		<p>Diese Seite dient zur Wahl der T-Shirts bzw. des Mottos für den letzten Schultag.</p>
+		<p>Wenn der QR-Code richtig gescannt wurde, sollte in dem unteren Feld ein einzigartiger Code stehen. Dieser Code berechtigt zu jeweils einer Stimme.</p>
+		<p>Sobald eine Stimme abgegeben wurde, kann sie nicht mehr abgeändert werden.</p>
+		<ul class="w3-ul w3-border">
+			<li><h3>Zur Auswahl stehen:</h3></li>
+			<li>"ES": <a href="https://i.imgur.com/JP20nQk.jpg">Bild</a></li>
+			<li>"Wer sich erinnert, war nicht dabei": <a href="https://i.imgur.com/bd8LtL2.jpg">Bild</a></li>
+			<li>"Abicetamol": <a href="https://i.imgur.com/ZizY6CK.jpg">Bild</a></li>
+			<li>"Abi con carne: Scharf im Abgang": kein Bild vorhanden</li>
+			<li>"ACAbi: kein Bild vorhanden"</li>
+		</ul>
+	</div>
+	<form class="w3-container" method="post" target="_parent">
+		<input class="w3-input w3-section w3-round" type="text" placeholder="Code" id="authcode" name="authcode">
+		<select class="w3-select w3-round" name="shirt">
+			<option value="" disabled selected>T-Shirt auswählen</option>
+			<option value="ES">"ES"</option>
+			<option value="Wer-sich-erinnert">Wer sich erinnert, war nicht dabei</option>
+			<option value="Abicetamol">Abicetamol</option>
+			<option value="Abi-con-carne">Abi con carne: Scharf im Abgang</option>
+			<option value="ACAbi">ACAbi</option>
+		</select>
+		<input type="submit" class="w3-btn w3-grey w3-section w3-round" value="Absenden">
+	</form>
+	<script src="/client.js"></script>
+</body>
+</html>
