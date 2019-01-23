@@ -6,7 +6,7 @@ const uglify = require('uglify-js');
 
 const workdir = process.cwd();
 const content = [workdir + '/__static/*.html'];
-const css = [workdir + '/node_modules/w3-css/w3.css', workdir + './css/*.css'];
+const css = [workdir + '/node_modules/w3-css/w3.css', workdir + '/css/*.css'];
 
 purify(content, css, (purifiedCSS) => {
 	var parsed = crass.parse(purifiedCSS);

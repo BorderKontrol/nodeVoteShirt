@@ -20,7 +20,7 @@ html(lang='de')
           each val in things
             option(value=val) #{val}
         input.w3-btn(class=['w3-red', 'w3-round'], type='submit', value='Absenden')
-        input.w3-input(type='text' id='authcode')
+        input.w3-input(type='text' name='authcode' id='authcode')
       #modal(class='w3-modal')
         img.w3-modal-content(class='w3-animate-zoom', id='modalimg')
     script(src='/__static/client.js')
