@@ -7,6 +7,7 @@ var items = document.getElementsByClassName("items");
 for(var i = 0; i < items.length; i++){
     var item = items.item(i);
     item.addEventListener("click", function(event) {
+        modalimg.style.display = "none";
         modalimg.src = encodeURIComponent("/__static/images/" + event.currentTarget.textContent + ".jpg");
         modal.style.display = "block";
     });
@@ -14,4 +15,8 @@ for(var i = 0; i < items.length; i++){
 
 modal.addEventListener("click", function(event) {
     modal.style.display = "none";
+});
+
+modalimg.addEventListener("load", function(event) {
+    modalimg.style.display = "block";
 });
