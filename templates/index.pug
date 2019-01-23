@@ -1,0 +1,26 @@
+doctype html
+html(lang='de')
+  head
+    title T-Shirt Wahl
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1')
+    link(rel='stylesheet' href='/__static/client.css')
+  body
+    header.w3-container(class='w3-red')
+      h1 T-Shirt Wahl
+    .w3-container
+      h3 Zur Auswahl stehen:
+      ul.w3-ul
+        each val in things
+          li.w3-light-grey(class=['items', 'w3-hover-red', 'w3-hover-opacity'])
+            p= val
+      form(method='post', action='/__api/vote')
+        select.w3-select(name='shirt' class='w3-section')
+          option(disabled, selected) T-Shirt auswählen
+          each val in things
+            option(value=val) #{val}
+        input.w3-btn(class=['w3-red', 'w3-round'], type='submit', value='Absenden')
+        input.w3-input(type='text' id='authcode')
+      #modal(class='w3-modal')
+        img.w3-modal-content(class='w3-animate-zoom', id='modalimg')
+    script(src='/__static/client.js')

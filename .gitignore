@@ -29,8 +29,11 @@ bower_components
 # node-waf configuration
 .lock-wscript
 
-# build directory
-build/
+# __static directory
+__static/
+
+# Images to vote on
+images/*
 
 # Dependency directories
 node_modules/
