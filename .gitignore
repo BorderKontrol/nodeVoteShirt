@@ -33,7 +33,10 @@ bower_components
 __static/
 
 # Images to vote on
-images/*
+images/
+
+# Database
+db.nosql
 
 # Dependency directories
 node_modules/
