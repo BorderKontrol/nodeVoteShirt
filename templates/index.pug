@@ -15,7 +15,7 @@ html(lang='de')
           li.w3-light-grey(class=['items', 'w3-hover-red', 'w3-hover-opacity'])
             p= val
       form(method='post', action='/__api/vote')
-        select.w3-select(name='shirt' class='w3-section')
+        select.w3-select(name='shirt' class='w3-section' id='select')
           option(disabled, selected) T-Shirt auswählen
           each val in things
             option(value=val) #{val}
