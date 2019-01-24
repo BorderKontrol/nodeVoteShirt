@@ -23,6 +23,6 @@ modalimg.addEventListener("load", function(event) {
     modalimg.parentElement.style.display = "block";
 });
 
-select.addEventListener("change"), function(event) {
+select.addEventListener("change", function(event) {
     submitbtn.disabled = false;
 });
