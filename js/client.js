@@ -7,7 +7,7 @@ var items = document.getElementsByClassName("items");
 for(var i = 0; i < items.length; i++){
     var item = items.item(i);
     item.addEventListener("click", function(event) {
-        modalimg.style.display = "none";
+        modalimg.parentElement.style.display = "none";
         modalimg.src = encodeURIComponent("/__static/images/" + event.currentTarget.textContent + ".jpg");
         modal.style.display = "block";
     });
@@ -18,5 +18,5 @@ modal.addEventListener("click", function(event) {
 });
 
 modalimg.addEventListener("load", function(event) {
-    modalimg.style.display = "block";
+    modalimg.parentElement.style.display = "block";
 });

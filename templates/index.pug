@@ -22,5 +22,7 @@ html(lang='de')
         input.w3-btn(class=['w3-red', 'w3-round'], type='submit', value='Absenden')
         input.w3-input(type='text' name='authcode' id='authcode')
       #modal(class='w3-modal')
-        img.w3-modal-content(class='w3-animate-zoom', id='modalimg')
+        span(class=['w3-button', 'w3-hover-red', 'w3-xlarge', 'w3-display-topright']) ×
+        .w3-modal-content(class='w3-animate-zoom')
+          img(id='modalimg')
     script(src='/__static/client.js')
