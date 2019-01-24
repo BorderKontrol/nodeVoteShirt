@@ -19,7 +19,7 @@ html(lang='de')
           option(disabled, selected) T-Shirt auswählen
           each val in things
             option(value=val) #{val}
-        input.w3-btn(class=['w3-red', 'w3-round'], type='submit', value='Absenden', id='submitbtn' disabled)
+        input.w3-btn(class=['w3-red', 'w3-round', 'w3-animate-opacity'], type='submit', value='Absenden', id='submitbtn' disabled)
         input.w3-input(type='text' name='authcode' id='authcode')
       #modal(class='w3-modal')
         span(class=['w3-button', 'w3-hover-red', 'w3-xlarge', 'w3-display-topright']) ×
