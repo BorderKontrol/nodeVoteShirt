@@ -5,7 +5,7 @@ body {
 	min-height: 100%;
 }
 #modalimg {
-	style: 100%;
+	width: 100%;
 }
 #authcode {
 	display: none;
