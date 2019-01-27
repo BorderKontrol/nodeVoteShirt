@@ -26,5 +26,6 @@ db.find().fields('shirt').callback((err, response) => {
 			}
 		}
 	}
+	results.sort((a, b) => b.count - a.count);
 	console.log(results);
 });
