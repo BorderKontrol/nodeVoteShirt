@@ -10,7 +10,7 @@
   "license": "MIT",
   "dependencies": {
     "crass": "^0.12.3",
-    "express": "^4.16.4",
+    "express": "^4.18.2",
     "mkdirp": "^0.5.1",
     "nosql": "^6.1.0",
     "pug": "^2.0.3",
